@@ -1,0 +1,792 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+body {
+  background-image: linear-gradient(
+    1deg,
+    #cdcbce 55%,
+    rgba(34, 40, 49, 0.41) 90%
+  );
+  height: 2200px;
+  margin: none;
+  padding: none;
+}
+
+/*COLORES PRINCIPALES-------
+1. #222831 azul muy oscuro
+2. #393E46 Gris oscuro
+3. #FFCC00 Amarillo oscuro
+4. #a5a7ab Gris para navbar
+
+font-family: 'Exo 2', sans-serif; Titulo
+font-family: 'Mukta', sans-serif; 
+font-family: 'Onest', sans-serif; para letra normal
+
+*/
+/*-----------------------------------------------*/
+/* ROOT---------------------------------------*/
+:root {
+  --first-color: #ffcc00;
+  --second-color: #222831;
+  --third-color: #393e46;
+  --fouth-color: #a5a7ab;
+  --five-color: #ffff;
+  --tit-titles: "Exo 2", sans-serif;
+  --primary-letter: "Onest", sans-serif;
+  --border1-radiuus: 10px;
+  --border2-radiuus: 5px;
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 1 : PARTE DEL NAVBAR-----------------*/
+
+.contenedor-navegacion {
+  margin: 40px 130px 0px 130px;
+  padding: 15px 0px 10px 0px;
+  border-radius: var(--border1-radiuus);
+  box-shadow: 2px 2px 4px rgb(85, 85, 85), -2px -2px 4px white;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  font-family: var(--primary-letter);
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.link-1,
+.link-3,
+.link-4,
+.link-5 {
+  color: var(--second-color);
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+  border-radius: var(--border2-radiuus);
+}
+
+.link-2 {
+  background: var(--first-color);
+  color: var(--five-color);
+  text-decoration: none;
+  padding: 7px 25px 7px 25px;
+  border-radius: var(--border2-radiuus);
+  box-shadow: 1px 1px 3px rgb(85, 85, 85), -1px -1px 3px white;
+}
+
+.link-1:hover,
+.link-3:hover,
+.link-4:hover,
+.link-5:hover {
+  color: var(--five-color);
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+}
+
+.item1:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover {
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+
+.overlay,
+.menu {
+  display: none;
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 2 : DESCRIPTION ABOUT ME-------------*/
+
+.contenedor-aboutme {
+  margin-top: 10px;
+}
+
+.homepage-titulo {
+  font-family: var(--tit-titles);
+  color: var(--first-color);
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px 6px #222831;
+}
+
+.descripcion_aboutme {
+  font-family: var(--primary-letter);
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.fotoliza1 {
+  width: 115%;
+}
+
+.seccion-botones {
+  border: none;
+  margin-top: 50px;
+}
+
+.btn-education,
+.btn-skills,
+.btn-projects {
+  background: var(--second-color);
+  border: none;
+  border-radius: var(--border2-radiuus);
+  margin: 0px 0px 0px 30px;
+  box-shadow: 2px 2px 4px black, -2px -2px 3px white;
+}
+
+.btn-education:hover,
+.btn-skills:hover,
+.btn-projects:hover {
+  background: var(--first-color);
+}
+
+.education,
+.skills,
+.projects {
+  font-family: var(--primary-letter);
+  color: var(--five-color);
+  padding: 40px 50px 40px 50px;
+  font-size: 16px;
+}
+
+.education:hover,
+.skills:hover,
+.projects:hover {
+  color: var(--second-color);
+}
+
+.redes-sociales {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.instagram-icon,
+.github-icon,
+.linkin-icon,
+.discord-icon {
+  width: 40px;
+  opacity: 60%;
+  border: none;
+}
+
+.instagram-icon:hover,
+.github-icon:hover,
+.linkin-icon:hover,
+.discord-icon:hover {
+  box-shadow: 2px 2px 4px black, -2px -2px 3px white;
+}
+
+.instagram,
+.github,
+.linkin,
+.discord {
+  margin-left: 20px;
+  border: none;
+}
+
+.description_1000 {
+  display: none;
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 3 : EDUCATION------------------------*/
+
+.experiencia_seccion {
+  border: none;
+  margin-top: 150px;
+}
+
+.experiencia_1 {
+  background: var(--first-color);
+  height: 80px;
+  margin: 50px 150px 0px 0px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 3px 3px 7px #585858;
+}
+
+.experiencia_2,
+.experiencia_3,
+.experiencia_4 {
+  background: var(--first-color);
+  height: 80px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 3px 3px 7px #585858;
+}
+
+.experiencia_2 {
+  margin: 20px 200px 0px 0px;
+}
+
+.experiencia_3 {
+  margin: 20px 250px 0px 0px;
+}
+
+.experiencia_4 {
+  margin: 20px 300px 0px 0px;
+}
+
+.descripcion-años {
+  font-family: var(--primary-letter);
+  color: var(--second-color);
+  font-size: 45px;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+.descripcion-carrera {
+  font-family: var(--primary-letter);
+  color: var(--second-color);
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+
+.descripcion-instituto {
+  font-family: var(--primary-letter);
+  color: var(--second-color);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-left: 40px;
+}
+
+.tit-edu {
+  font-family: var(--tit-titles);
+  position: relative;
+  color: #585858;
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px 4px #ffff;
+  margin-left: 200px;
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 4 : SKILLS---------------------------*/
+
+.contenedor-skills {
+  border: none;
+  margin-top: 200px;
+  padding: 30px;
+}
+
+.tit-skills {
+  font-family: var(--tit-titles);
+  position: relative;
+  top: 80px;
+  color: var(--second-color);
+  font-size: 80px;
+  transform: rotate(-90deg);
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px 3px #ffff;
+}
+
+.Iconos-skills {
+  background: var(--second-color);
+  width: 80px;
+  padding: 15px;
+  margin-right: -20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px black, -2px -2px 3px white;
+}
+
+.Iconos-skills:hover {
+  background: var(--fouth-color);
+}
+
+.contenedor-skills1000 {
+  display: none;
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 5 : INQUIRY SECTION------------------*/
+.inquiry-section {
+  background: var(--first-color);
+  margin-top: 180px;
+}
+
+.inquiry {
+  font-family: var(--primary-letter);
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-left: 150px;
+}
+
+.description-inquiry {
+  font-family: var(--primary-letter);
+  font-size: 22px;
+  margin-top: -10px;
+  padding-bottom: 30px;
+  padding-left: 150px;
+}
+
+.btn-inquiry {
+  background: var(--second-color);
+  border: none;
+  border-radius: var(--border1-radiuus);
+  padding: 20px 30px 20px 30px;
+  margin-top: 40px;
+  box-shadow: 3px 3px 3px rgb(66, 66, 66), -3px -3px 3px white;
+}
+
+.btn-inquiry:hover {
+  background: var(--fouth-color);
+}
+
+.link-inquiry {
+  font-family: var(--primary-letter);
+  font-size: 26px;
+  text-decoration: none;
+  color: var(--five-color);
+  font-weight: 600;
+  padding: 10px 30px 10px 30px;
+}
+
+.link-inquiry:hover {
+  color: var(--second-color);
+  padding: 10px 30px 10px 30px;
+}
+
+.screen1000 {
+  display: none;
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 6 : FOOTER---------------------------*/
+.contenedor-redesicon {
+  background-color: var(--second-color);
+}
+
+.unalista {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.iconos {
+  margin: 15px 5px 15px 5px;
+  width: 50%;
+}
+
+.iconos:hover {
+  border-radius: var(--border2-radiuus);
+  box-shadow: 0px 0px 5px #ffcc00;
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 7 : SCREEN 1000----------------------*/
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: linear-gradient(
+      1deg,
+      #cdcbce 55%,
+      rgba(34, 40, 49, 0.41) 90%
+    );
+    height: 800px;
+    margin: none;
+    padding: none;
+  }
+
+  .contenedor-navegacion {
+    display: none;
+  }
+
+  .menu-btn {
+    font-family: var(--primary-letter);
+    background: var(--second-color);
+    padding: 10px 30px 10px 30px;
+    border-radius: var(--border1-radiuus);
+    border: none;
+    color: var(--five-color);
+    font-size: 20px;
+    margin: 30px 0px 0px 50px;
+    box-shadow: 2px 2px 3px rgb(66, 66, 66), -2px -2px 3px white;
+  }
+
+  .menu {
+    display: block;
+    text-decoration: none;
+  }
+
+  .overlay {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #222831fa;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+  }
+
+  .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay a {
+    font-family: var(--primary-letter);
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: var(--first-color);
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: var(--five-color);
+  }
+
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+  }
+
+  .contenedor-aboutme {
+    display: none;
+  }
+
+  .description_1000 {
+    display: block;
+    margin: 50px 100px 0px 100px;
+  }
+
+  .description_aboutme {
+    font-size: 16px;
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+
+  .homepage-titulo {
+    font-family: var(--tit-titles);
+    color: var(--first-color);
+    margin-top: 20px;
+    margin-left: 0px;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 6px #222831;
+  }
+
+  .experiencia_seccion {
+    border: none;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .experiencia_1 {
+    background: var(--first-color);
+    margin-right: 0px;
+    border-radius: var(--border1-radiuus);
+    box-shadow: 3px 3px 7px #585858;
+  }
+
+  .experiencia_2,
+  .experiencia_3,
+  .experiencia_4 {
+    background: var(--first-color);
+    margin-right: 0px;
+    border-radius: var(--border1-radiuus);
+    box-shadow: 3px 3px 7px #585858;
+  }
+
+  .descripcion-años {
+    font-size: 5px;
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+
+  .descripcion-carrera {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .descripcion-instituto {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+
+  .tit-skills {
+    font-size: 60px;
+  }
+
+  .Iconos-skills {
+    width: 50px;
+    margin-left: 70px;
+  }
+
+  .contenedor-skills {
+    display: none;
+  }
+
+  .contenedor-skills1000 {
+    display: block;
+  }
+
+  .tit-skills2 {
+    font-family: var(--tit-titles);
+    margin-top: 80px;
+    text-align: center;
+    color: var(--second-color);
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 3px #ffff;
+  }
+
+  .iconos1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .iconos2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .Iconos-skills2 {
+    background: var(--second-color);
+    width: 60px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: var(--border2-radiuus);
+    box-shadow: 2px 2px 3px black, -2px -2px 3px white;
+  }
+
+  .Iconos-skills3 {
+    background: var(--second-color);
+    width: 60px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: -30px;
+    border-radius: var(--border2-radiuus);
+    box-shadow: 2px 2px 3px black, -2px -2px 3px white;
+  }
+
+  .Iconos-skills2:hover,
+  .Iconos-skills3:hover {
+    background: var(--fouth-color);
+  }
+
+  .inquiry-section {
+    display: none;
+  }
+
+  .screen1000 {
+    display: block;
+    background: var(--first-color);
+    margin-top: 150px;
+  }
+
+  .inquiry1000 {
+    font-family: var(--primary-letter);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+
+  .descripcion-inquiry1000 {
+    font-family: var(--primary-letter);
+    font-size: 16px;
+    margin-top: -10px;
+  }
+
+  .btn-inquiry1000 {
+    font-family: var(--primary-letter);
+    background: var(--second-color);
+    color: var(--five-color);
+    border: none;
+    border-radius: var(--border1-radiuus);
+    padding: 10px 30px 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px rgb(66, 66, 66), -2px -2px 3px white;
+  }
+
+  .btn-inquiry1000:hover {
+    background: var(--fouth-color);
+    color: var(--second-color);
+  }
+
+  .contenedor-redesicon {
+    height: 60px;
+  }
+
+  .contenedor-redesicon {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*-----------------------------------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/* PARTE 8 : SCREEN 1200----------------------*/
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-image: linear-gradient(
+      1deg,
+      #cdcbce 55%,
+      rgba(34, 40, 49, 0.41) 90%
+    );
+    height: 2000px;
+    margin: none;
+    padding: none;
+  }
+
+  .contenedor-navegacion {
+    margin: 30px 120px 0px 120px;
+    padding: 15px 0px 10px 0px;
+    border-radius: var(--border1-radiuus);
+    box-shadow: 2px 2px 4px rgb(85, 85, 85), -2px -2px 4px white;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    font-family: var(--primary-letter);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .link-1,
+  .link-3,
+  .link-4,
+  .link-5 {
+    color: var(--second-color);
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: var(--border2-radiuus);
+  }
+
+  .link-2 {
+    background: var(--first-color);
+    color: var(--five-color);
+    text-decoration: none;
+    padding: 7px 25px 7px 25px;
+    border-radius: var(--border2-radiuus);
+    box-shadow: 1px 1px 2px rgb(85, 85, 85), -1px -1px 2px white;
+  }
+
+  .homepage-titulo {
+    color: var(--first-color);
+    font-size: 60px;
+  }
+
+  .descripcion_aboutme {
+    font-size: 12px;
+  }
+
+  .btn-education,
+  .btn-skills,
+  .btn-projects {
+    background: var(--second-color);
+    border: none;
+    border-radius: var(--border2-radiuus);
+    margin: 0px 0px 0px 20px;
+    box-shadow: 2px 2px 4px black, -2px -2px 3px white;
+  }
+
+  .education,
+  .skills,
+  .projects {
+    font-family: var(--primary-letter);
+    color: white;
+    padding: 40px 50px 40px 50px;
+    font-size: 14px;
+  }
+
+  .descripcion-años {
+    font-size: 40px;
+  }
+
+  .descripcion-carrera {
+    font-size: 20px;
+  }
+
+  .descripcion-instituto {
+    font-size: 14px;
+  }
+
+  .tit-edu {
+    font-size: 70px;
+    margin-left: 100px;
+  }
+
+  .tit-skills {
+    font-size: 70px;
+    top: 75px;
+  }
+
+  .Iconos-skills {
+    width: 60px;
+    margin-right: -10px;
+  }
+
+  .inquiry {
+    font-size: 30px;
+    padding-left: 120px;
+    padding-top: 30px;
+  }
+
+  .description-inquiry {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 120px;
+  }
+
+  .btn-inquiry {
+    padding: 10px 30px 10px 30px;
+    margin-top: 40px;
+  }
+
+  .link-inquiry {
+    font-size: 22px;
+    padding: 10px 30px 10px 30px;
+  }
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liza P. About me</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portafólio de Liza Palomino, donde encontrarás todo lo que necesitas para diseños de páginas web"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico" />
+    <link href="/src/about-me.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Mukta:wght@200;300;400;500;600;700;800&family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 1 : PARTE DEL NAVBAR --------------------------->
+
+    <div class="contenedor-navegacion">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col item1">
+            <a class="link-1" href="/index.html">Home</a>
+          </div>
+          <div class="col item2">
+            <a class="link-2" href="">About me</a>
+          </div>
+          <div class="col item3">
+            <a class="link-3" href="/my_work.html">My Work</a>
+          </div>
+          <div class="col item4">
+            <a class="link-4" href="/my_projects.html">My Project</a>
+          </div>
+          <div class="col item5">
+            <a class="link-5" href="/contact-me.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a onclick="openNav()" class="menu" href="#">
+      <button class="menu-btn">Menu</button>
+    </a>
+
+    <div id="mobile-menu" class="overlay">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="/index.html">Home</a>
+        <a href="/about_me.html">About me</a>
+        <a href="/my_work.html">My work</a>
+        <a href="/my_projects.html">My Projects</a>
+        <a href="/about_me.html">Contact me</a>
+      </div>
+    </div>
+
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 2 : DESCRIPTION ABOUT ME ----------------------->
+    <div class="container contenedor-aboutme">
+      <div class="row">
+        <div class="col-8">
+          <h1 class="homepage-titulo text-start d-flex">ABOUT ME</h1>
+          <br />
+          <p class="descripcion_aboutme">
+            Hi, I’m Liza from Colombia. I’m a civil engineer and specialist in
+            Project Management with more that 3 years of experience in the
+            industry. Due the pandemic, many people's lives changed, including
+            mine.
+            <br />
+            <br />
+            So I started working teaching Spanish on a platform called Preply,
+            where I was able to improve my skills to communicate in another
+            language, then I decided to emigrate to the United States to work as
+            an Au Pair, improve my English and get to know a new culture.
+            <br />
+            <br />
+            While I was living in USA, I started to create my new project, which
+            was based on the creation of a website and as I didn't have much
+            knowledge in programming I started to learn about this world through
+            Youtube and at the same time looking up differents colleges to study
+            something related with programming and finally I got a Workshop from
+            Shecodes where I got certified as a Front-End Developer.
+            <br />
+            <br />
+            I’m currently studying at Coursera UI/UX Design, because I think it
+            is a very good complement for a Front-End Developer and because one
+            of my dream is to be able to work with companies from other
+            countries
+          </p>
+
+          <div class="seccion-botones">
+            <button class="btn-education">
+              <a class="education text-decoration-none" href="#education"
+                >Education</a
+              >
+            </button>
+            <button class="btn-skills">
+              <a class="skills text-decoration-none" href="#skills">Skills </a>
+            </button>
+            <button class="btn-projects">
+              <a class="projects text-decoration-none" href="/my_projects.html"
+                >Projects
+              </a>
+            </button>
+          </div>
+
+          <div class="redes-sociales">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/lizapalominoab?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "
+              class="instagram"
+              ><img
+                class="instagram-icon"
+                src="/img/Iconos-redes/Instagram-icon.png"
+                alt=""
+              />
+            </a>
+
+            <a href="" class="github"
+              ><img
+                class="github-icon"
+                src="/img/Iconos-redes/GitHub-icon.png"
+                alt=""
+              />
+            </a>
+
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/liza-palomino-698a48237/"
+              class="linkin"
+              ><img
+                class="linkin-icon"
+                src="/img/Iconos-redes/Linkin-icon.png"
+                alt=""
+              />
+            </a>
+
+            <a href="" class="discord"
+              ><img
+                class="discord-icon"
+                src="/img/Iconos-redes/Discord-icon.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img
+            class="fotoliza1"
+            src="/img/Fotoliza2.png"
+            alt="foto_liza_hero"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="description_1000">
+      <h1 class="homepage-titulo text-start d-flex">ABOUT ME</h1>
+      <p class="description_aboutme">
+        Hi, I’m Liza from Colombia. I’m a civil engineer and specialist in
+        Project Management with more that 3 years of experience in the industry.
+        Due the pandemic, many people's lives changed, including mine.
+        <br />
+        <br />
+        So I started working teaching Spanish on a platform called Preply, where
+        I was able to improve my skills to communicate in another language, then
+        I decided to emigrate to the United States to work as an Au Pair,
+        improve my English and get to know a new culture.
+        <br />
+        <br />
+        While I was living in USA, I started to create my new project, which was
+        based on the creation of a website and as I didn't have much knowledge
+        in programming I started to learn about this world through Youtube and
+        at the same time looking up differents colleges to study something
+        related with programming and finally I got a Workshop from Shecodes
+        where I got certified as a Front-End Developer.
+        <br />
+        <br />
+        I’m currently studying at Coursera UI/UX Design, because I think it is a
+        very good complement for a Front-End Developer and because one of my
+        dream is to be able to work with companies from other countries
+      </p>
+    </div>
+
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 3 : EDUCATION ---------------------------------->
+
+    <div class="experiencia_seccion">
+      <div class="titulo_education">
+        <h1 class="tit-edu" id="education">EDUCATION</h1>
+      </div>
+      <div class="experiencia_1">
+        <div class="container contenedor-descrip">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="descripcion-años">2012 - 2017</h1>
+            </div>
+            <div class="col-6">
+              <h2 class="descripcion-carrera">Civil Engeenering</h2>
+              <p class="descripcion-instituto">Univarsity of Ibagué</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiencia_2">
+        <div class="container contenedor-descrip">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="descripcion-años">2018 - 2019</h1>
+            </div>
+            <div class="col-6">
+              <h2 class="descripcion-carrera">Project Management</h2>
+              <p class="descripcion-instituto">Univarsity of Tolima</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiencia_3">
+        <div class="container contenedor-descrip">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="descripcion-años">2022 - 2023</h1>
+            </div>
+            <div class="col-6">
+              <h2 class="descripcion-carrera">Frot-End Development</h2>
+              <p class="descripcion-instituto">Shecodes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiencia_4">
+        <div class="container contenedor-descrip">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="descripcion-años">2022 - 2023</h1>
+            </div>
+            <div class="col-6">
+              <h2 class="descripcion-carrera">UI/UX Design</h2>
+              <p class="descripcion-instituto">Coursera</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 4 : SKILLS ------------------------------------->
+
+    <div class="container contenedor-skills">
+      <div class="row">
+        <div class="col-4">
+          <h1 class="tit-skills" id="skills">SKILLS</h1>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/Html.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/css.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/java.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/react.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/internet.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/vscode.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/api.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/responsive.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/seo.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/boostrap.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/github.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/illustraitor.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/invision.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <img
+                class="Iconos-skills"
+                src="/img/Iconos-skills/figma.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-skills1000">
+      <div class="tit-skills-2">
+        <h1 class="tit-skills2">SKILLS</h1>
+      </div>
+      <div class="iconos1">
+        <img class="Iconos-skills2" src="/img/Iconos-skills/Html.png" alt="" />
+        <img class="Iconos-skills2" src="/img/Iconos-skills/css.png" alt="" />
+        <img class="Iconos-skills2" src="/img/Iconos-skills/java.png" alt="" />
+        <img class="Iconos-skills2" src="/img/Iconos-skills/react.png" alt="" />
+        <img
+          class="Iconos-skills2"
+          src="/img/Iconos-skills/internet.png"
+          alt=""
+        />
+        <img
+          class="Iconos-skills2"
+          src="/img/Iconos-skills/vscode.png"
+          alt=""
+        />
+      </div>
+
+      <div class="iconos2">
+        <img class="Iconos-skills3" src="/img/Iconos-skills/api.png" alt="" />
+        <img
+          class="Iconos-skills3"
+          src="/img/Iconos-skills/responsive.png"
+          alt=""
+        />
+        <img class="Iconos-skills3" src="/img/Iconos-skills/seo.png" alt="" />
+        <img
+          class="Iconos-skills3"
+          src="/img/Iconos-skills/boostrap.png"
+          alt=""
+        />
+        <img
+          class="Iconos-skills3"
+          src="/img/Iconos-skills/github.png"
+          alt=""
+        />
+        <img
+          class="Iconos-skills3"
+          src="/img/Iconos-skills/illustraitor.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 5 : INQUIRY SECTION ---------------------------->
+
+    <div class="inquiry-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h2 class="inquiry">Work Inquiry</h2>
+            <p class="description-inquiry">Let's work together</p>
+          </div>
+          <div class="col-4">
+            <button class="btn-inquiry">
+              <a href="/contact-me.html" class="link-inquiry">Contact me</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen1000 text-center">
+      <h2 class="inquiry1000">Work Inquiry</h2>
+      <p class="descripcion-inquiry1000">Let's work together</p>
+      <a href="/contact-me.html"
+        ><button class="btn-inquiry1000">Contact me</button></a
+      >
+    </div>
+
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 6 : FOOTER ------------------------------------->
+
+    <footer class="pie-pagina">
+      <div class="contenedor-redesicon">
+        <dl class="unalista">
+          <dt>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/lizapalominoab?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/IG-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+          <dt>
+            <a href=""
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/Github-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+          <dt>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/liza-palomino-698a48237/"
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/LinkIn-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+          <dt>
+            <a href=""
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/Discord-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+        </dl>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="/src/nav.js"></script>
+  </body>
+</html>

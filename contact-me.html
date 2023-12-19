@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liza P. Contact</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portafólio de Liza Palomino, donde encontrarás todo lo que necesitas para diseños de páginas web"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico" />
+    <link href="/src/contact-me.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Mukta:wght@200;300;400;500;600;700;800&family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 1 : PARTE DEL NAVBAR --------------------------->
+
+    <div class="contenedor-navegacion">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col item1">
+            <a class="link-1" href="/index.html">Home</a>
+          </div>
+          <div class="col item2">
+            <a class="link-2" href="/about_me.html">About me</a>
+          </div>
+          <div class="col item3">
+            <a class="link-3" href="/my_work.html">My Work</a>
+          </div>
+          <div class="col item4">
+            <a class="link-4" href="/my_projects.html">My Project</a>
+          </div>
+          <div class="col item5">
+            <a class="link-5" href="">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a onclick="openNav()" class="menu" href="#">
+      <button class="menu-btn">Menu</button>
+    </a>
+
+    <div id="mobile-menu" class="overlay">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="/index.html">Home</a>
+        <a href="/about_me.html">About me</a>
+        <a href="/my_work.html">My work</a>
+        <a href="/my_projects.html">My Projects</a>
+        <a href="/contact-me.html">Contact me</a>
+      </div>
+    </div>
+
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 2 : PARTE DEL FORM Y TITULO--------------------->
+
+    <div class="contenedor-full">
+      <div class="contact-contenedor">
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li class="lista">
+              <label class="name" for="name">Full name</label>
+              <br />
+              <input type="text" id="name" name="user_name" class="user_name" />
+            </li>
+            <li class="lista">
+              <label class="mail" for="mail">E-mail</label>
+              <br />
+              <input
+                type="email"
+                id="mail"
+                name="user_mail"
+                class="user_mail"
+              />
+            </li>
+            <li class="lista">
+              <label class="msg" for="msg">Message</label>
+              <br />
+              <textarea
+                id="msg"
+                class="user_message"
+                name="user_message"
+                rows="3"
+                cols="50"
+              ></textarea>
+            </li>
+            <li class="boton">
+              <button class="btn-submit" type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="descripcion-contenedor">
+        <div class="tit-contact-me">
+          <h1 class="tit-contact">
+            Let's get in <br />
+            touch
+          </h1>
+        </div>
+        <div class="links-contact">
+          <p class="e-mail">E-mail</p>
+          <a href="mailto:lizapalominousa@gmail.com" class="link-email">
+            <em>lizapalominousa@gmail.com</em>
+          </a>
+          <hr />
+
+          <p class="instagram">Instagram</p>
+          <a
+            class="link-instagram"
+            href="https://www.instagram.com/lizapalominoab?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "
+            ><em>@lizapalominoab</em>
+          </a>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-full1200">
+      <div class="contact-contenedor1200">
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li class="lista1200">
+              <label class="name1200" for="name">Full name</label>
+              <br />
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                class="user_name1200"
+                size="40"
+              />
+            </li>
+            <li class="lista1200">
+              <label class="mail1200" for="mail">E-mail</label>
+              <br />
+              <input
+                type="email"
+                id="mail"
+                name="user_mail"
+                class="user_mail1200"
+                size="40"
+              />
+            </li>
+            <li class="lista1200">
+              <label class="msg1200" for="msg">Message</label>
+              <br />
+              <textarea
+                id="msg"
+                class="user_message1200"
+                name="user_message"
+                rows="3"
+                cols="40"
+              ></textarea>
+            </li>
+            <li class="boton1200">
+              <button class="btn-submit1200" type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="descripcion-contenedor1200">
+        <div class="tit-contact-me">
+          <h1 class="tit-contact1200">
+            Let's get in <br />
+            touch
+          </h1>
+        </div>
+        <div class="links-contact">
+          <p class="e-mail">E-mail</p>
+          <a href="mailto:lizapalominousa@gmail.com" class="link-email">
+            <em>lizapalominousa@gmail.com</em>
+          </a>
+          <hr />
+
+          <p class="instagram">Instagram</p>
+          <a
+            class="link-instagram"
+            href="https://www.instagram.com/lizapalominoab?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "
+            ><em>@lizapalominoab</em>
+          </a>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-full1000">
+      <div class="tit-contact-me">
+        <h1 class="tit-contact1200">
+          Let's get in <br />
+          touch
+        </h1>
+      </div>
+      <div class="links-contact">
+        <p class="e-mail">E-mail</p>
+        <a href="mailto:lizapalominousa@gmail.com" class="link-email">
+          <em>lizapalominousa@gmail.com</em>
+        </a>
+        <hr />
+
+        <p class="instagram">Instagram</p>
+        <a
+          class="link-instagram"
+          href="https://www.instagram.com/lizapalominoab?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "
+          ><em>@lizapalominoab</em>
+        </a>
+        <hr />
+      </div>
+    </div>
+
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--.......----------------------------------------------->
+    <!--PARTE 6 : FOOTER ------------------------------------->
+
+    <footer class="pie-pagina">
+      <div class="contenedor-redesicon">
+        <dl class="unalista">
+          <dt>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/lizapalominoab?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/IG-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+          <dt>
+            <a href=""
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/Github-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+          <dt>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/liza-palomino-698a48237/"
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/LinkIn-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+          <dt>
+            <a href=""
+              ><img
+                class="iconos"
+                src="/img/Iconos-redes/Discord-icon-gray.png"
+                alt=""
+            /></a>
+          </dt>
+        </dl>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="/src/nav.js"></script>
+  </body>
+</html>
